@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BC11980-74E0-4CF5-AAC1-7451D31206BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperMarket</RootNamespace>
+    <AssemblyName>SuperMarket</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAddKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAddKala.Designer.cs">
+      <DependentUpon>FAddKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAddUser.Designer.cs">
+      <DependentUpon>FAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFactor.Designer.cs">
+      <DependentUpon>FFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKalaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKalaEdit.Designer.cs">
+      <DependentUpon>FKalaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKalaSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKalaSearch.Designer.cs">
+      <DependentUpon>FKalaSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMoshtari.Designer.cs">
+      <DependentUpon>FMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMoshtariEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMoshtariEdit.Designer.cs">
+      <DependentUpon>FMoshtariEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMoshtariSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMoshtariSearch.Designer.cs">
+      <DependentUpon>FMoshtariSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReports.Designer.cs">
+      <DependentUpon>FReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shamsiDate.cs" />
+    <Compile Include="SuperMarketDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuperMarketDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FAddKala.resx">
+      <DependentUpon>FAddKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAddUser.resx">
+      <DependentUpon>FAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFactor.resx">
+      <DependentUpon>FFactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKalaEdit.resx">
+      <DependentUpon>FKalaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKalaSearch.resx">
+      <DependentUpon>FKalaSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMoshtari.resx">
+      <DependentUpon>FMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMoshtariEdit.resx">
+      <DependentUpon>FMoshtariEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMoshtariSearch.resx">
+      <DependentUpon>FMoshtariSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReports.resx">
+      <DependentUpon>FReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SuperMarketDataSet.xsc">
+      <DependentUpon>SuperMarketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SuperMarketDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SuperMarketDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SuperMarketDataSet.xss">
+      <DependentUpon>SuperMarketDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
